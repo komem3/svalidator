@@ -8,11 +8,6 @@ import (
 )
 
 func TestSafeObject_BadStruct(t *testing.T) {
-	type Sample struct {
-		TestString1 string
-		TestNumber  int
-	}
-
 	for _, tt := range []struct {
 		name  string
 		arg   svalidator.ValidatorMap[string]
